@@ -77,11 +77,11 @@
     <?php if (is_front_page() && !is_home()) : ?>
     <section class="hero-section">
         <div class="hero-content">
-            <h1><?php echo esc_html__('Professional Car Repair Service in Turku', 'car-repair-theme'); ?></h1>
-            <p><?php echo esc_html__('We provide quality car repair and maintenance services to keep your vehicle running smoothly', 'car-repair-theme'); ?></p>
+            <h1><?php echo esc_html__('Ammattimainen Autokorjaamopalvelu Turussa', 'car-repair-theme'); ?></h1>
+            <p><?php echo esc_html__('Tarjoamme laadukkaita autonkorjaus- ja huoltopalveluita, jotta ajoneuvosi toimii sujuvasti', 'car-repair-theme'); ?></p>
             <div class="hero-buttons">
-                <a href="<?php echo esc_url(home_url('/book-now/')); ?>" class="cta-button"><?php echo esc_html__('Book Appointment', 'car-repair-theme'); ?></a>
-                <a href="#services" class="cta-button outline"><?php echo esc_html__('Our Services', 'car-repair-theme'); ?></a>
+                <a href="<?php echo esc_url(home_url('/book-now/')); ?>" class="cta-button"><?php echo esc_html__('Varaa Aika', 'car-repair-theme'); ?></a>
+                <a href="#services" class="cta-button outline"><?php echo esc_html__('Palvelumme', 'car-repair-theme'); ?></a>
             </div>
         </div>
     </section>

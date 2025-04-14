@@ -16,8 +16,8 @@
 		<div class="container">
             <div class="footer-container">
                 <div class="footer-widget">
-                    <h3><?php echo esc_html__('About Us', 'car-repair-theme'); ?></h3>
-                    <p><?php echo esc_html__('We are a professional car repair shop located in Turku, Finland. Our team of experienced mechanics provides high-quality services to keep your vehicle in excellent condition.', 'car-repair-theme'); ?></p>
+                    <h3><?php echo esc_html__('Tietoa Meistä', 'car-repair-theme'); ?></h3>
+                    <p><?php echo esc_html__('Olemme ammattimainen autokorjaamo Turussa. Kokeneiden mekaanikkojen tiimimme tarjoaa korkealaatuisia palveluita pitääkseen ajoneuvosi erinomaisessa kunnossa.', 'car-repair-theme'); ?></p>
                     <div class="footer-social-links">
                         <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
                         <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
@@ -27,29 +27,29 @@
                 </div>
                 
                 <div class="footer-widget">
-                    <h3><?php echo esc_html__('Quick Links', 'car-repair-theme'); ?></h3>
+                    <h3><?php echo esc_html__('Pikalinkit', 'car-repair-theme'); ?></h3>
                     <ul class="footer-links">
-                        <li><a href="<?php echo esc_url(home_url('/')); ?>"><?php echo esc_html__('Home', 'car-repair-theme'); ?></a></li>
-                        <li><a href="<?php echo esc_url(home_url('/about-us/')); ?>"><?php echo esc_html__('About Us', 'car-repair-theme'); ?></a></li>
-                        <li><a href="<?php echo esc_url(home_url('/services/')); ?>"><?php echo esc_html__('Services', 'car-repair-theme'); ?></a></li>
-                        <li><a href="<?php echo esc_url(home_url('/book-now/')); ?>"><?php echo esc_html__('Book Appointment', 'car-repair-theme'); ?></a></li>
+                        <li><a href="<?php echo esc_url(home_url('/')); ?>"><?php echo esc_html__('Etusivu', 'car-repair-theme'); ?></a></li>
+                        <li><a href="<?php echo esc_url(home_url('/about-us/')); ?>"><?php echo esc_html__('Tietoa Meistä', 'car-repair-theme'); ?></a></li>
+                        <li><a href="<?php echo esc_url(home_url('/services/')); ?>"><?php echo esc_html__('Palvelut', 'car-repair-theme'); ?></a></li>
+                        <li><a href="<?php echo esc_url(home_url('/book-now/')); ?>"><?php echo esc_html__('Varaa Aika', 'car-repair-theme'); ?></a></li>
                         <!-- Contact Us link removed -->
                     </ul>
                 </div>
                 
                 <div class="footer-widget">
-                    <h3><?php echo esc_html__('Our Services', 'car-repair-theme'); ?></h3>
+                    <h3><?php echo esc_html__('Palvelumme', 'car-repair-theme'); ?></h3>
                     <ul class="footer-links">
-                        <li><a href="#"><?php echo esc_html__('Oil Change', 'car-repair-theme'); ?></a></li>
-                        <li><a href="#"><?php echo esc_html__('Tire Change & Storage', 'car-repair-theme'); ?></a></li>
-                        <li><a href="#"><?php echo esc_html__('Regular Maintenance', 'car-repair-theme'); ?></a></li>
-                        <li><a href="#"><?php echo esc_html__('AC Service', 'car-repair-theme'); ?></a></li>
-                        <li><a href="#"><?php echo esc_html__('Wheel Alignment', 'car-repair-theme'); ?></a></li>
+                        <li><a href="#"><?php echo esc_html__('Öljynvaihto', 'car-repair-theme'); ?></a></li>
+                        <li><a href="#"><?php echo esc_html__('Renkaiden vaihto & säilytys', 'car-repair-theme'); ?></a></li>
+                        <li><a href="#"><?php echo esc_html__('Määräaikaishuolto', 'car-repair-theme'); ?></a></li>
+                        <li><a href="#"><?php echo esc_html__('Ilmastointihuolto', 'car-repair-theme'); ?></a></li>
+                        <li><a href="#"><?php echo esc_html__('Nelipyöräsuuntaus', 'car-repair-theme'); ?></a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-widget">
-                    <h3><?php echo esc_html__('Contact Info', 'car-repair-theme'); ?></h3>
+                    <h3><?php echo esc_html__('Yhteystiedot', 'car-repair-theme'); ?></h3>
                     <div itemscope itemtype="http://schema.org/AutoRepair">
                         <meta itemprop="name" content="<?php echo esc_attr(get_bloginfo('name')); ?>">
                         <div class="footer-contact-item">
@@ -87,15 +87,15 @@
                                 <meta itemprop="dayOfWeek" content="Monday Tuesday Wednesday Thursday Friday">
                                 <meta itemprop="opens" content="08:00">
                                 <meta itemprop="closes" content="17:00">
-                                <?php echo esc_html__('Mon-Fri: 8:00 - 17:00', 'car-repair-theme'); ?><br>
+                                <?php echo esc_html__('Ma-Pe: 8:00 - 17:00', 'car-repair-theme'); ?><br>
                                 <meta itemprop="dayOfWeek" content="Saturday">
                                 <meta itemprop="opens" content="09:00">
                                 <meta itemprop="closes" content="14:00">
-                                <?php echo esc_html__('Sat: 9:00 - 14:00', 'car-repair-theme'); ?><br>
+                                <?php echo esc_html__('La: 9:00 - 14:00', 'car-repair-theme'); ?><br>
                                 <meta itemprop="dayOfWeek" content="Sunday">
                                 <meta itemprop="closes" content="00:00">
                                 <meta itemprop="opens" content="00:00">
-                                <?php echo esc_html__('Sun: Closed', 'car-repair-theme'); ?>
+                                <?php echo esc_html__('Su: Suljettu', 'car-repair-theme'); ?>
                             </div>
                         </div>
                     </div>

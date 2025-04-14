@@ -9,8 +9,8 @@ get_header(); ?>
     <section id="services" class="section services-section">
         <div class="container">
             <div class="section-title">
-                <h2><?php echo esc_html__('Our Services', 'car-repair-theme'); ?></h2>
-                <p><?php echo esc_html__('We offer a wide range of professional car repair and maintenance services', 'car-repair-theme'); ?></p>
+                <h2><?php echo esc_html__('Palvelumme', 'car-repair-theme'); ?></h2>
+                <p><?php echo esc_html__('Tarjoamme laajan valikoiman ammattimaisia autonkorjaus- ja huoltopalveluita', 'car-repair-theme'); ?></p>
             </div>
             
             <div itemscope itemtype="http://schema.org/AutoRepair">
@@ -23,9 +23,9 @@ get_header(); ?>
                     </div>
                     <div class="service-content">
                         <h3 itemprop="name"><?php echo esc_html__('Öljynvaihto', 'car-repair-theme'); ?></h3>
-                        <p itemprop="description"><?php echo esc_html__('Regular oil changes to keep your engine running smoothly and extend its life.', 'car-repair-theme'); ?></p>
+                        <p itemprop="description"><?php echo esc_html__('Säännölliset öljynvaihdot pitävät moottorisi käynnissä tasaisesti ja pidentävät sen käyttöikää.', 'car-repair-theme'); ?></p>
                         <meta itemprop="serviceType" content="Oil Change">
-                        <a href="<?php echo esc_url(home_url('/book-now/')); ?>" class="read-more"><?php echo esc_html__('Book Now', 'car-repair-theme'); ?></a>
+                        <a href="<?php echo esc_url(home_url('/book-now/')); ?>" class="read-more"><?php echo esc_html__('Varaa Nyt', 'car-repair-theme'); ?></a>
                     </div>
                 </div>
                 
@@ -35,9 +35,9 @@ get_header(); ?>
                     </div>
                     <div class="service-content">
                         <h3 itemprop="name"><?php echo esc_html__('Renkaiden vaihto + kausisäilytys', 'car-repair-theme'); ?></h3>
-                        <p itemprop="description"><?php echo esc_html__('Professional tire changing service with seasonal storage options.', 'car-repair-theme'); ?></p>
+                        <p itemprop="description"><?php echo esc_html__('Ammattimainen renkaanvaihtopalvelu kausisäilytysmahdollisuudella.', 'car-repair-theme'); ?></p>
                         <meta itemprop="serviceType" content="Tire Change and Seasonal Storage">
-                        <a href="<?php echo esc_url(home_url('/book-now/')); ?>" class="read-more"><?php echo esc_html__('Book Now', 'car-repair-theme'); ?></a>
+                        <a href="<?php echo esc_url(home_url('/book-now/')); ?>" class="read-more"><?php echo esc_html__('Varaa Nyt', 'car-repair-theme'); ?></a>
                     </div>
                 </div>
                 
@@ -47,9 +47,9 @@ get_header(); ?>
                     </div>
                     <div class="service-content">
                         <h3 itemprop="name"><?php echo esc_html__('Määräaikaishuolto', 'car-repair-theme'); ?></h3>
-                        <p itemprop="description"><?php echo esc_html__('Regular maintenance service based on your vehicle\'s odometer reading.', 'car-repair-theme'); ?></p>
+                        <p itemprop="description"><?php echo esc_html__('Säännöllinen huoltopalvelu ajoneuvosi matkamittarilukeman perusteella.', 'car-repair-theme'); ?></p>
                         <meta itemprop="serviceType" content="Regular Maintenance">
-                        <a href="<?php echo esc_url(home_url('/book-now/')); ?>" class="read-more"><?php echo esc_html__('Book Now', 'car-repair-theme'); ?></a>
+                        <a href="<?php echo esc_url(home_url('/book-now/')); ?>" class="read-more"><?php echo esc_html__('Varaa Nyt', 'car-repair-theme'); ?></a>
                     </div>
                 </div>
                 
@@ -59,9 +59,9 @@ get_header(); ?>
                     </div>
                     <div class="service-content">
                         <h3 itemprop="name"><?php echo esc_html__('Ilmastointihuolto', 'car-repair-theme'); ?></h3>
-                        <p itemprop="description"><?php echo esc_html__('AC system maintenance and repair to ensure optimal cooling performance.', 'car-repair-theme'); ?></p>
+                        <p itemprop="description"><?php echo esc_html__('Ilmastointijärjestelmän huolto ja korjaus optimaalisen jäähdytystehon varmistamiseksi.', 'car-repair-theme'); ?></p>
                         <meta itemprop="serviceType" content="AC Maintenance">
-                        <a href="<?php echo esc_url(home_url('/book-now/')); ?>" class="read-more"><?php echo esc_html__('Book Now', 'car-repair-theme'); ?></a>
+                        <a href="<?php echo esc_url(home_url('/book-now/')); ?>" class="read-more"><?php echo esc_html__('Varaa Nyt', 'car-repair-theme'); ?></a>
                     </div>
                 </div>
                 
@@ -71,9 +71,9 @@ get_header(); ?>
                     </div>
                     <div class="service-content">
                         <h3 itemprop="name"><?php echo esc_html__('Nelipyöräsuuntaus', 'car-repair-theme'); ?></h3>
-                        <p itemprop="description"><?php echo esc_html__('Wheel alignment service to ensure smooth handling and longer tire life.', 'car-repair-theme'); ?></p>
+                        <p itemprop="description"><?php echo esc_html__('Pyörien suuntauspalvelu tasaisen käsittelyn ja pidemmän rengasiän varmistamiseksi.', 'car-repair-theme'); ?></p>
                         <meta itemprop="serviceType" content="Wheel Alignment">
-                        <a href="<?php echo esc_url(home_url('/book-now/')); ?>" class="read-more"><?php echo esc_html__('Book Now', 'car-repair-theme'); ?></a>
+                        <a href="<?php echo esc_url(home_url('/book-now/')); ?>" class="read-more"><?php echo esc_html__('Varaa Nyt', 'car-repair-theme'); ?></a>
                     </div>
                 </div>
                 
@@ -83,15 +83,15 @@ get_header(); ?>
                     </div>
                     <div class="service-content">
                         <h3 itemprop="name"><?php echo esc_html__('Lampunvaihto', 'car-repair-theme'); ?></h3>
-                        <p itemprop="description"><?php echo esc_html__('Quick and efficient light bulb replacement service for all vehicle types.', 'car-repair-theme'); ?></p>
+                        <p itemprop="description"><?php echo esc_html__('Nopea ja tehokas polttimoidenvaihtopalvelu kaikille ajoneuvotyypeille.', 'car-repair-theme'); ?></p>
                         <meta itemprop="serviceType" content="Light Bulb Replacement">
-                        <a href="<?php echo esc_url(home_url('/book-now/')); ?>" class="read-more"><?php echo esc_html__('Book Now', 'car-repair-theme'); ?></a>
+                        <a href="<?php echo esc_url(home_url('/book-now/')); ?>" class="read-more"><?php echo esc_html__('Varaa Nyt', 'car-repair-theme'); ?></a>
                     </div>
                 </div>
             </div>
             
             <div class="text-center mt-5">
-                <a href="<?php echo esc_url(home_url('/book-now/')); ?>" class="btn-primary"><?php echo esc_html__('Book Your Appointment', 'car-repair-theme'); ?></a>
+                <a href="<?php echo esc_url(home_url('/book-now/')); ?>" class="btn-primary"><?php echo esc_html__('Varaa Aikasi', 'car-repair-theme'); ?></a>
             </div>
         </div>
         </div><!-- Close schema.org AutoRepair div -->
@@ -106,9 +106,9 @@ get_header(); ?>
                 </div>
                 
                 <div class="about-content animate-on-scroll">
-                    <h2><?php echo esc_html__('About Our Car Repair Shop', 'car-repair-theme'); ?></h2>
-                    <p><?php echo esc_html__('Welcome to our professional car repair shop in Turku, Finland. We take pride in providing high-quality repair and maintenance services for all vehicle makes and models.', 'car-repair-theme'); ?></p>
-                    <p><?php echo esc_html__('Our team of skilled mechanics has years of experience in the automotive industry, ensuring that your vehicle receives the best care possible.', 'car-repair-theme'); ?></p>
+                    <h2><?php echo esc_html__('Tietoa Autokorjaamostamme', 'car-repair-theme'); ?></h2>
+                    <p><?php echo esc_html__('Tervetuloa ammattimaiseen autokorjaamoomme Turussa. Olemme ylpeitä tarjotessamme korkealaatuisia korjaus- ja huoltopalveluita kaikille automerkeille ja -malleille.', 'car-repair-theme'); ?></p>
+                    <p><?php echo esc_html__('Ammattitaitoisella mekaanikkojen tiimillämme on vuosien kokemus autoalalta, mikä takaa, että ajoneuvosi saa parasta mahdollista hoitoa.', 'car-repair-theme'); ?></p>
                     
                     <div class="about-features">
                         <div class="feature-item">
@@ -116,7 +116,7 @@ get_header(); ?>
                                 <i class="fas fa-check"></i>
                             </div>
                             <div class="feature-text">
-                                <?php echo esc_html__('Expert Mechanics', 'car-repair-theme'); ?>
+                                <?php echo esc_html__('Asiantuntevat Mekaanikot', 'car-repair-theme'); ?>
                             </div>
                         </div>
                         
@@ -125,7 +125,7 @@ get_header(); ?>
                                 <i class="fas fa-check"></i>
                             </div>
                             <div class="feature-text">
-                                <?php echo esc_html__('Quality Parts', 'car-repair-theme'); ?>
+                                <?php echo esc_html__('Laadukkaat Varaosat', 'car-repair-theme'); ?>
                             </div>
                         </div>
                         
@@ -134,7 +134,7 @@ get_header(); ?>
                                 <i class="fas fa-check"></i>
                             </div>
                             <div class="feature-text">
-                                <?php echo esc_html__('Modern Equipment', 'car-repair-theme'); ?>
+                                <?php echo esc_html__('Nykyaikaiset Laitteet', 'car-repair-theme'); ?>
                             </div>
                         </div>
                         
@@ -143,12 +143,12 @@ get_header(); ?>
                                 <i class="fas fa-check"></i>
                             </div>
                             <div class="feature-text">
-                                <?php echo esc_html__('Warranty Guarantee', 'car-repair-theme'); ?>
+                                <?php echo esc_html__('Takuuturva', 'car-repair-theme'); ?>
                             </div>
                         </div>
                     </div>
                     
-                    <a href="<?php echo esc_url(home_url('/about-us/')); ?>" class="btn-primary mt-4"><?php echo esc_html__('Learn More', 'car-repair-theme'); ?></a>
+                    <a href="<?php echo esc_url(home_url('/about-us/')); ?>" class="btn-primary mt-4"><?php echo esc_html__('Lue Lisää', 'car-repair-theme'); ?></a>
                 </div>
             </div>
         </div>
@@ -158,8 +158,8 @@ get_header(); ?>
     <section id="why-choose" class="section why-choose-section">
         <div class="container">
             <div class="section-title">
-                <h2><?php echo esc_html__('Why Choose Us', 'car-repair-theme'); ?></h2>
-                <p><?php echo esc_html__('Discover the advantages of choosing our car repair services', 'car-repair-theme'); ?></p>
+                <h2><?php echo esc_html__('Miksi Valita Meidät', 'car-repair-theme'); ?></h2>
+                <p><?php echo esc_html__('Tutustu autokorjauspalveluidemme etuihin', 'car-repair-theme'); ?></p>
             </div>
             
             <div class="reasons-container">
@@ -167,32 +167,32 @@ get_header(); ?>
                     <div class="reason-icon">
                         <i class="fas fa-tools"></i>
                     </div>
-                    <h3><?php echo esc_html__('Experienced Team', 'car-repair-theme'); ?></h3>
-                    <p><?php echo esc_html__('Our mechanics have years of experience and ongoing training in the latest automotive technologies.', 'car-repair-theme'); ?></p>
+                    <h3><?php echo esc_html__('Kokenut Tiimi', 'car-repair-theme'); ?></h3>
+                    <p><?php echo esc_html__('Mekaanikoillamme on vuosien kokemus ja jatkuva koulutus uusimpiin autoteknologioihin.', 'car-repair-theme'); ?></p>
                 </div>
                 
                 <div class="reason-card animate-on-scroll">
                     <div class="reason-icon">
                         <i class="fas fa-check-circle"></i>
                     </div>
-                    <h3><?php echo esc_html__('Quality Work', 'car-repair-theme'); ?></h3>
-                    <p><?php echo esc_html__('We pride ourselves on delivering high-quality work with attention to detail and excellence.', 'car-repair-theme'); ?></p>
+                    <h3><?php echo esc_html__('Laadukas Työ', 'car-repair-theme'); ?></h3>
+                    <p><?php echo esc_html__('Olemme ylpeitä tarjotessamme korkealaatuista työtä tarkalla ja erinomaisella otteella.', 'car-repair-theme'); ?></p>
                 </div>
                 
                 <div class="reason-card animate-on-scroll">
                     <div class="reason-icon">
                         <i class="fas fa-cog"></i>
                     </div>
-                    <h3><?php echo esc_html__('Modern Equipment', 'car-repair-theme'); ?></h3>
-                    <p><?php echo esc_html__('Our shop is equipped with the latest diagnostic and repair equipment for all vehicle makes and models.', 'car-repair-theme'); ?></p>
+                    <h3><?php echo esc_html__('Nykyaikaiset Laitteet', 'car-repair-theme'); ?></h3>
+                    <p><?php echo esc_html__('Korjaamomme on varustettu uusimmilla diagnostiikka- ja korjauslaitteilla kaikkia automerkkejä ja -malleja varten.', 'car-repair-theme'); ?></p>
                 </div>
                 
                 <div class="reason-card animate-on-scroll">
                     <div class="reason-icon">
                         <i class="fas fa-euro-sign"></i>
                     </div>
-                    <h3><?php echo esc_html__('Competitive Pricing', 'car-repair-theme'); ?></h3>
-                    <p><?php echo esc_html__('We offer fair and transparent pricing with no hidden costs for all our repair and maintenance services.', 'car-repair-theme'); ?></p>
+                    <h3><?php echo esc_html__('Kilpailukykyiset Hinnat', 'car-repair-theme'); ?></h3>
+                    <p><?php echo esc_html__('Tarjoamme reilua ja läpinäkyvää hinnoittelua ilman piilokustannuksia kaikille korjaus- ja huoltopalveluillemme.', 'car-repair-theme'); ?></p>
                 </div>
             </div>
         </div>
@@ -202,21 +202,21 @@ get_header(); ?>
     <section id="testimonials" class="section testimonials-section">
         <div class="container">
             <div class="section-title">
-                <h2><?php echo esc_html__('Customer Testimonials', 'car-repair-theme'); ?></h2>
-                <p><?php echo esc_html__('Read what our satisfied customers have to say about our services', 'car-repair-theme'); ?></p>
+                <h2><?php echo esc_html__('Asiakkaiden Palautteet', 'car-repair-theme'); ?></h2>
+                <p><?php echo esc_html__('Lue mitä tyytyväiset asiakkaamme sanovat palveluistamme', 'car-repair-theme'); ?></p>
             </div>
             
             <div class="testimonials-container">
                 <div itemscope itemtype="http://schema.org/Review" class="testimonial-card animate-on-scroll">
                     <div class="testimonial-content">
-                        <p itemprop="reviewBody" class="testimonial-text"><?php echo esc_html__('I\'ve been bringing my car here for years. They are always professional, honest, and do excellent work. Highly recommended for anyone in Turku looking for reliable car repair services.', 'car-repair-theme'); ?></p>
+                        <p itemprop="reviewBody" class="testimonial-text"><?php echo esc_html__('Olen tuonut autoni tänne vuosien ajan. He ovat aina ammattimaisia, rehellisiä ja tekevät erinomaista työtä. Suosittelen lämpimästi kaikille, jotka etsivät luotettavaa autokorjaamopalvelua Turussa.', 'car-repair-theme'); ?></p>
                         <div itemprop="author" itemscope itemtype="http://schema.org/Person" class="testimonial-author">
                             <div class="author-image">
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/testimonial-1.svg" alt="Testimonial Author">
                             </div>
                             <div class="author-info">
                                 <h4 itemprop="name">Mikko L.</h4>
-                                <p><?php echo esc_html__('Loyal Customer', 'car-repair-theme'); ?></p>
+                                <p><?php echo esc_html__('Kanta-asiakas', 'car-repair-theme'); ?></p>
                             </div>
                         </div>
                         <meta itemprop="datePublished" content="2023-10-15">
@@ -237,9 +237,9 @@ get_header(); ?>
     <section class="cta-section">
         <div class="container">
             <div class="cta-content">
-                <h2><?php echo esc_html__('Ready to Book Your Service?', 'car-repair-theme'); ?></h2>
-                <p><?php echo esc_html__('Schedule your appointment today and experience our professional car repair services.', 'car-repair-theme'); ?></p>
-                <a href="<?php echo esc_url(home_url('/book-now/')); ?>" class="cta-button-light"><?php echo esc_html__('Book Appointment', 'car-repair-theme'); ?></a>
+                <h2><?php echo esc_html__('Valmis Varaamaan Huollon?', 'car-repair-theme'); ?></h2>
+                <p><?php echo esc_html__('Varaa aikasi tänään ja koe ammattitaitoiset autokorjauspalvelumme.', 'car-repair-theme'); ?></p>
+                <a href="<?php echo esc_url(home_url('/book-now/')); ?>" class="cta-button-light"><?php echo esc_html__('Varaa Aika', 'car-repair-theme'); ?></a>
             </div>
         </div>
     </section>
