@@ -54,18 +54,21 @@
 				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
                     <i class="fas fa-bars"></i>
                 </button>
-				<?php
-				wp_nav_menu(
-					array(
-						'theme_location' => 'menu-1',
-						'menu_id'        => 'primary-menu',
-					)
-				);
-				?>
                 <div class="header-contact">
                     <a href="tel:+358123456789" class="contact-phone">
                         <i class="fas fa-phone"></i> +358 12 345 6789
                     </a>
+                </div>
+                <div class="menu-wrapper">
+                    <?php
+                    wp_nav_menu(
+                        array(
+                            'theme_location' => 'menu-1',
+                            'menu_id'        => 'primary-menu',
+                            'menu_class'     => 'primary-menu-items',
+                        )
+                    );
+                    ?>
                 </div>
 			</nav><!-- #site-navigation -->
 		</div><!-- .header-container -->

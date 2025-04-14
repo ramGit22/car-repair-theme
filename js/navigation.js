@@ -19,10 +19,11 @@
 		return;
 	}
 
-	const menu = siteNavigation.getElementsByTagName( 'ul' )[ 0 ];
+	const menuWrapper = siteNavigation.querySelector('.menu-wrapper');
+	const menu = menuWrapper ? menuWrapper.querySelector('ul.primary-menu-items') : null;
 
 	// Hide menu toggle button if menu is empty and return early.
-	if ( 'undefined' === typeof menu ) {
+	if ( 'undefined' === typeof menu || !menu ) {
 		button.style.display = 'none';
 		return;
 	}

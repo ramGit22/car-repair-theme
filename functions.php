@@ -205,6 +205,7 @@ function car_repair_theme_scripts() {
 	// Enqueue scripts
 	wp_enqueue_script( 'jquery' );
 	wp_enqueue_script( 'car-repair-theme-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'car-repair-header-effects', get_template_directory_uri() . '/js/header-effects.js', array(), _S_VERSION, true );
 	wp_enqueue_script( 'car-repair-custom-js', get_template_directory_uri() . '/assets/js/custom.js', array('jquery'), _S_VERSION, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
