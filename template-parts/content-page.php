@@ -14,7 +14,11 @@
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
 
-	<?php car_repair_theme_post_thumbnail(); ?>
+	<?php if ( has_post_thumbnail() ) : ?>
+	<div class="featured-image">
+		<?php the_post_thumbnail(); ?>
+	</div>
+	<?php endif; ?>
 
 	<div class="entry-content">
 		<?php

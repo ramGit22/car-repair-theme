@@ -39,4 +39,25 @@
 			}
 		} );
 	} );
+	
+	// Primary color
+	wp.customize( 'primary_color', function( value ) {
+		value.bind( function( to ) {
+			document.documentElement.style.setProperty('--primary-color', to);
+		} );
+	} );
+	
+	// Secondary color
+	wp.customize( 'secondary_color', function( value ) {
+		value.bind( function( to ) {
+			document.documentElement.style.setProperty('--secondary-color', to);
+		} );
+	} );
+	
+	// Accent color
+	wp.customize( 'accent_color', function( value ) {
+		value.bind( function( to ) {
+			document.documentElement.style.setProperty('--accent-color', to);
+		} );
+	} );
 }( jQuery ) );

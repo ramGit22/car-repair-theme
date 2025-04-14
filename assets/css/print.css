@@ -1,0 +1,191 @@
+/* 
+* Print styles for Car Repair Theme
+*/
+
+@media print {
+    /* General adjustments */
+    body {
+        background: #fff !important;
+        color: #000 !important;
+        font-size: 12pt;
+        font-family: serif;
+        line-height: 1.5;
+        margin: 0;
+        padding: 0;
+    }
+    
+    /* Hide unnecessary elements */
+    .site-header,
+    .main-navigation,
+    .hero-section,
+    .cta-section,
+    .site-footer,
+    .widget-area,
+    .comments-area,
+    .navigation,
+    .skip-link,
+    button,
+    input[type="button"],
+    input[type="reset"],
+    input[type="submit"],
+    .btn-primary,
+    .cta-button,
+    .social-links,
+    .menu-toggle,
+    .header-contact {
+        display: none !important;
+    }
+    
+    /* Container adjustments */
+    .container,
+    .site-content {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        max-width: none;
+    }
+    
+    /* Typography */
+    h1, h2, h3, h4, h5, h6 {
+        page-break-after: avoid;
+        page-break-inside: avoid;
+    }
+    
+    h1 {
+        font-size: 24pt;
+    }
+    
+    h2 {
+        font-size: 20pt;
+    }
+    
+    h3 {
+        font-size: 18pt;
+    }
+    
+    h4, h5, h6 {
+        font-size: 14pt;
+    }
+    
+    p, blockquote, ul, ol, dl, table, figure {
+        page-break-inside: avoid;
+        margin-bottom: 1em;
+    }
+    
+    /* Links */
+    a {
+        color: #000 !important;
+        text-decoration: underline;
+    }
+    
+    a[href]:after {
+        content: " (" attr(href) ")";
+        font-size: 10pt;
+        font-style: italic;
+    }
+    
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after,
+    a[href*="mailto:"]:after,
+    a[href*="tel:"]:after {
+        content: "";
+    }
+    
+    /* Images */
+    img {
+        max-width: 100% !important;
+        page-break-inside: avoid;
+    }
+    
+    /* Tables */
+    table {
+        border-collapse: collapse;
+    }
+    
+    table, th, td {
+        border: 1px solid #000;
+    }
+    
+    /* Service cards */
+    .service-card {
+        break-inside: avoid;
+        border: 1px solid #000;
+        margin-bottom: 20px;
+        padding: 10px;
+    }
+    
+    .service-image {
+        max-height: 100px;
+        overflow: hidden;
+    }
+    
+    /* About section */
+    .about-container {
+        display: block;
+    }
+    
+    .about-image {
+        max-width: 300px;
+        margin-bottom: 20px;
+    }
+    
+    /* Testimonials */
+    .testimonial-card {
+        border: 1px solid #000;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+    
+    /* Contact section */
+    .contact-container {
+        display: block;
+    }
+    
+    .contact-form {
+        display: none;
+    }
+    
+    .contact-info {
+        width: 100%;
+    }
+    
+    /* Print-specific elements */
+    .print-header {
+        display: block;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .print-footer {
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+        font-size: 10pt;
+        border-top: 1px solid #000;
+        padding-top: 10px;
+    }
+    
+    /* Booking page */
+    .booking-system {
+        display: none;
+    }
+    
+    .service-list {
+        width: 100%;
+    }
+    
+    /* Add page breaks */
+    .section {
+        page-break-before: auto;
+    }
+    
+    h1, h2 {
+        page-break-before: always;
+    }
+    
+    /* First heading doesn't need a page break */
+    body h1:first-of-type,
+    body h2:first-of-type {
+        page-break-before: avoid;
+    }
+}

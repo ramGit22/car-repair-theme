@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f5f5" />
+      <stop offset="100%" stop-color="#e0e0e0" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="600" height="400" fill="url(#bg-gradient)" />
+  
+  <!-- Tire illustration -->
+  <g transform="translate(300, 180)">
+    <!-- Tire outer -->
+    <circle cx="0" cy="0" r="120" fill="#2C3E50" />
+    
+    <!-- Tire inner rim -->
+    <circle cx="0" cy="0" r="50" fill="#95a5a6" stroke="#7f8c8d" stroke-width="8" />
+    
+    <!-- Rim details -->
+    <circle cx="0" cy="0" r="15" fill="#7f8c8d" />
+    
+    <!-- Spokes -->
+    <g stroke="#95a5a6" stroke-width="10">
+      <line x1="0" y1="-45" x2="0" y2="-110" />
+      <line x1="38.97" y1="-22.5" x2="95.26" y2="-55" />
+      <line x1="38.97" y1="22.5" x2="95.26" y2="55" />
+      <line x1="0" y1="45" x2="0" y2="110" />
+      <line x1="-38.97" y1="22.5" x2="-95.26" y2="55" />
+      <line x1="-38.97" y1="-22.5" x2="-95.26" y2="-55" />
+    </g>
+    
+    <!-- Tire tread pattern -->
+    <g stroke="#1a252f" stroke-width="5" stroke-dasharray="10,10">
+      <circle cx="0" cy="0" r="110" fill="none" />
+      <circle cx="0" cy="0" r="100" fill="none" />
+      <circle cx="0" cy="0" r="90" fill="none" />
+    </g>
+  </g>
+  
+  <!-- Season icons -->
+  <g transform="translate(120, 180)">
+    <!-- Winter icon -->
+    <circle cx="0" cy="0" r="40" fill="#3498DB" />
+    <g stroke="#ffffff" stroke-width="4" stroke-linecap="round">
+      <line x1="0" y1="-30" x2="0" y2="30" />
+      <line x1="-30" y1="0" x2="30" y2="0" />
+      <line x1="-20" y1="-20" x2="20" y2="20" />
+      <line x1="-20" y1="20" x2="20" y2="-20" />
+    </g>
+  </g>
+  
+  <g transform="translate(480, 180)">
+    <!-- Summer icon -->
+    <circle cx="0" cy="0" r="40" fill="#E74C3C" />
+    <circle cx="0" cy="0" r="20" fill="#ffffff" />
+    <g stroke="#ffffff" stroke-width="4" stroke-linecap="round">
+      <line x1="0" y1="-40" x2="0" y2="-25" />
+      <line x1="0" y1="25" x2="0" y2="40" />
+      <line x1="-40" y1="0" x2="-25" y2="0" />
+      <line x1="25" y1="0" x2="40" y2="0" />
+      <line x1="-28.28" y1="-28.28" x2="-17.68" y2="-17.68" />
+      <line x1="17.68" y1="17.68" x2="28.28" y2="28.28" />
+      <line x1="-28.28" y1="28.28" x2="-17.68" y2="17.68" />
+      <line x1="17.68" y1="-17.68" x2="28.28" y2="-28.28" />
+    </g>
+  </g>
+  
+  <!-- Text label -->
+  <text x="300" y="350" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="#2C3E50">Renkaiden vaihto + kausisäilytys</text>
+</svg>

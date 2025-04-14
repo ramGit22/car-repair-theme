@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="800" viewBox="0 0 1920 800">
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2C3E50" />
+      <stop offset="100%" stop-color="#1A252F" />
+    </linearGradient>
+    <pattern id="pattern" width="50" height="50" patternUnits="userSpaceOnUse">
+      <circle cx="25" cy="25" r="1" fill="#ffffff" fill-opacity="0.1" />
+    </pattern>
+  </defs>
+  <rect width="1920" height="800" fill="url(#gradient)" />
+  <rect width="1920" height="800" fill="url(#pattern)" />
+  
+  <!-- Abstract car silhouette -->
+  <g transform="translate(960, 500)" opacity="0.1" fill="#ffffff">
+    <path d="M-400,0 C-350,-50 -300,-80 -200,-90 L-100,-90 C-50,-90 -30,-60 0,-60 C30,-60 50,-90 100,-90 L200,-90 C300,-80 350,-50 400,0 L400,50 C400,70 380,90 360,90 L-360,90 C-380,90 -400,70 -400,50 Z" />
+    <circle cx="-250" cy="90" r="50" />
+    <circle cx="250" cy="90" r="50" />
+  </g>
+  
+  <!-- Abstract shapes -->
+  <g opacity="0.1" fill="#ffffff">
+    <circle cx="200" cy="200" r="100" />
+    <circle cx="1720" cy="600" r="150" />
+    <rect x="500" y="700" width="200" height="80" rx="40" />
+    <rect x="1300" y="100" width="300" height="60" rx="30" />
+  </g>
+</svg>

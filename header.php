@@ -16,7 +16,11 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
-
+    <!-- Favicon -->
+    <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/assets/images/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/assets/images/favicon.png" type="image/png">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 	<?php wp_head(); ?>
 </head>
 
@@ -26,34 +30,58 @@
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'car-repair-theme' ); ?></a>
 
 	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+		<div class="container header-container">
+			<div class="site-branding">
 				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$car_repair_theme_description = get_bloginfo( 'description', 'display' );
-			if ( $car_repair_theme_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $car_repair_theme_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
-			<?php endif; ?>
-		</div><!-- .site-branding -->
+				the_custom_logo();
+				if ( is_front_page() && is_home() ) :
+					?>
+					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+					<?php
+				else :
+					?>
+					<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+					<?php
+				endif;
+				$car_repair_theme_description = get_bloginfo( 'description', 'display' );
+				if ( $car_repair_theme_description || is_customize_preview() ) :
+					?>
+					<p class="site-description"><?php echo $car_repair_theme_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
+				<?php endif; ?>
+			</div><!-- .site-branding -->
 
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'car-repair-theme' ); ?></button>
-			<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				)
-			);
-			?>
-		</nav><!-- #site-navigation -->
+			<nav id="site-navigation" class="main-navigation">
+				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                    <i class="fas fa-bars"></i>
+                </button>
+				<?php
+				wp_nav_menu(
+					array(
+						'theme_location' => 'menu-1',
+						'menu_id'        => 'primary-menu',
+					)
+				);
+				?>
+                <div class="header-contact">
+                    <a href="tel:+358123456789" class="contact-phone">
+                        <i class="fas fa-phone"></i> +358 12 345 6789
+                    </a>
+                </div>
+			</nav><!-- #site-navigation -->
+		</div><!-- .header-container -->
 	</header><!-- #masthead -->
+    
+    <?php if (is_front_page() && !is_home()) : ?>
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1><?php echo esc_html__('Professional Car Repair Service in Turku', 'car-repair-theme'); ?></h1>
+            <p><?php echo esc_html__('We provide quality car repair and maintenance services to keep your vehicle running smoothly', 'car-repair-theme'); ?></p>
+            <div class="hero-buttons">
+                <a href="<?php echo esc_url(home_url('/book-now/')); ?>" class="cta-button"><?php echo esc_html__('Book Appointment', 'car-repair-theme'); ?></a>
+                <a href="#services" class="cta-button outline"><?php echo esc_html__('Our Services', 'car-repair-theme'); ?></a>
+            </div>
+        </div>
+    </section>
+    <?php endif; ?>
+    
+    <div id="content" class="site-content">

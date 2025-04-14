@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f5f5" />
+      <stop offset="100%" stop-color="#e0e0e0" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bg-gradient)" />
+  
+  <!-- Garage interior -->
+  <g>
+    <!-- Floor -->
+    <rect x="0" y="400" width="800" height="200" fill="#95a5a6" />
+    <g fill="#7f8c8d">
+      <rect x="0" y="450" width="800" height="2" />
+      <rect x="0" y="500" width="800" height="2" />
+      <rect x="0" y="550" width="800" height="2" />
+      
+      <rect x="100" y="400" width="2" height="200" />
+      <rect x="200" y="400" width="2" height="200" />
+      <rect x="300" y="400" width="2" height="200" />
+      <rect x="400" y="400" width="2" height="200" />
+      <rect x="500" y="400" width="2" height="200" />
+      <rect x="600" y="400" width="2" height="200" />
+      <rect x="700" y="400" width="2" height="200" />
+    </g>
+    
+    <!-- Back wall -->
+    <rect x="0" y="100" width="800" height="300" fill="#ecf0f1" />
+    
+    <!-- Garage equipment -->
+    <g>
+      <!-- Tool cabinet -->
+      <rect x="50" y="250" width="150" height="150" fill="#E74C3C" stroke="#2C3E50" stroke-width="2" />
+      <g fill="#2C3E50">
+        <rect x="60" y="260" width="130" height="30" />
+        <rect x="60" y="300" width="130" height="30" />
+        <rect x="60" y="340" width="130" height="30" />
+      </g>
+      <g fill="#ecf0f1">
+        <rect x="170" y="270" width="20" height="10" rx="5" />
+        <rect x="170" y="310" width="20" height="10" rx="5" />
+        <rect x="170" y="350" width="20" height="10" rx="5" />
+      </g>
+    </g>
+    
+    <!-- Car lift -->
+    <g>
+      <rect x="300" y="340" width="300" height="60" fill="#3498DB" stroke="#2C3E50" stroke-width="3" />
+      <rect x="320" y="340" width="10" height="60" fill="#2C3E50" />
+      <rect x="570" y="340" width="10" height="60" fill="#2C3E50" />
+      
+      <rect x="300" y="370" width="300" height="10" fill="#2C3E50" />
+      
+      <!-- Hydraulic posts -->
+      <rect x="320" y="340" width="30" height="100" fill="#7f8c8d" stroke="#2C3E50" stroke-width="2" />
+      <rect x="550" y="340" width="30" height="100" fill="#7f8c8d" stroke="#2C3E50" stroke-width="2" />
+    </g>
+    
+    <!-- Car on lift -->
+    <g transform="translate(450, 300)">
+      <!-- Car body -->
+      <path d="M-120,0 C-100,-30 -80,-40 -50,-40 L50,-40 C80,-40 100,-30 120,0 L120,30 C120,40 110,40 100,40 L-100,40 C-110,40 -120,40 -120,30 Z" fill="#3498DB" stroke="#2C3E50" stroke-width="3" />
+      
+      <!-- Windows -->
+      <path d="M-40,-35 L40,-35 L30,-10 L-30,-10 Z" fill="#ffffff" fill-opacity="0.7" />
+      
+      <!-- Wheels -->
+      <circle cx="-80" cy="40" r="20" fill="#2C3E50" />
+      <circle cx="80" cy="40" r="20" fill="#2C3E50" />
+      <circle cx="-80" cy="40" r="10" fill="#95a5a6" />
+      <circle cx="80" cy="40" r="10" fill="#95a5a6" />
+      
+      <!-- Lights -->
+      <rect x="-115" y="10" width="15" height="5" rx="2" fill="#f1c40f" />
+      <rect x="100" y="10" width="15" height="5" rx="2" fill="#E74C3C" />
+    </g>
+    
+    <!-- Mechanic -->
+    <g transform="translate(200, 350)">
+      <!-- Body -->
+      <rect x="-20" y="-70" width="40" height="70" rx="10" fill="#2C3E50" />
+      
+      <!-- Head -->
+      <circle cx="0" cy="-90" r="20" fill="#f5d76e" />
+      <path d="M-15,-85 C-15,-75 15,-75 15,-85" fill="none" stroke="#2C3E50" stroke-width="2" />
+      
+      <!-- Arms -->
+      <rect x="-50" y="-60" width="30" height="15" rx="5" fill="#2C3E50" transform="rotate(20, -50, -60)" />
+      <rect x="20" y="-60" width="50" height="15" rx="5" fill="#2C3E50" transform="rotate(-30, 20, -60)" />
+      
+      <!-- Legs -->
+      <rect x="-15" y="0" width="15" height="50" rx="5" fill="#2C3E50" />
+      <rect x="0" y="0" width="15" height="50" rx="5" fill="#2C3E50" />
+      
+      <!-- Tool in hand -->
+      <rect x="60" y="-80" width="30" height="10" rx="2" fill="#95a5a6" transform="rotate(-30, 60, -80)" />
+      <rect x="85" y="-95" width="10" height="20" rx="2" fill="#E74C3C" transform="rotate(-30, 85, -95)" />
+    </g>
+    
+    <!-- Wall decorations -->
+    <g>
+      <!-- Tool board -->
+      <rect x="650" y="150" width="100" height="150" fill="#2C3E50" />
+      
+      <!-- Tools silhouettes -->
+      <g fill="#ecf0f1">
+        <rect x="670" y="170" width="10" height="40" rx="2" />
+        <rect x="670" y="210" width="10" height="10" rx="2" />
+        
+        <path d="M700,170 L720,170 L730,180 L720,190 L700,190 L690,180 Z" />
+        
+        <rect x="660" y="220" width="80" height="5" rx="2" />
+        <rect x="660" y="235" width="80" height="5" rx="2" />
+        <rect x="660" y="250" width="80" height="5" rx="2" />
+        <rect x="660" y="265" width="80" height="5" rx="2" />
+        <rect x="660" y="280" width="80" height="5" rx="2" />
+      </g>
+    </g>
+    
+    <!-- Logo on wall -->
+    <g transform="translate(400, 180)">
+      <circle cx="0" cy="0" r="60" fill="#E74C3C" />
+      <circle cx="0" cy="0" r="50" fill="#ecf0f1" />
+      <text x="0" y="10" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#2C3E50">TURKU</text>
+      <text x="0" y="-10" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#2C3E50">CAR REPAIR</text>
+    </g>
+  </g>
+</svg>

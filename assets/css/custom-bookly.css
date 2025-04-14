@@ -1,0 +1,237 @@
+/* 
+* Custom Bookly Plugin Styles for Car Repair Theme
+*/
+
+/* === BOOKLY CUSTOMIZATIONS === */
+
+/* Service Step */
+.bookly-form .bookly-form-group > label,
+.bookly-form .bookly-label-error,
+.bookly-form .bookly-progress-tracker > .active {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+/* Make service boxes more visually appealing */
+.bookly-service-step .bookly-box {
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.bookly-service-step .bookly-box:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+/* Service names and category titles */
+.bookly-service-step .bookly-category-title,
+.bookly-service-step .bookly-service-name {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #2C3E50;
+}
+
+/* Service price */
+.bookly-service-step .bookly-service-price {
+    color: #E74C3C;
+    font-weight: 700;
+}
+
+/* Date/Time step */
+.bookly-form .picker__frame {
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.bookly-form .picker__header {
+    padding: 15px;
+}
+
+.bookly-form .picker__nav--prev, 
+.bookly-form .picker__nav--next {
+    padding: 8px;
+}
+
+.bookly-form .picker__day {
+    border-radius: 50%;
+    transition: all 0.2s ease;
+}
+
+.bookly-form .picker__day--selected, 
+.bookly-form .picker__day--selected:hover {
+    background-color: #E74C3C !important;
+    border-radius: 50%;
+}
+
+.bookly-form .picker__day:hover {
+    background-color: #f8f9fa;
+}
+
+.bookly-form .picker__day--today {
+    color: #3498DB;
+    font-weight: 700;
+}
+
+/* Time slots */
+.bookly-form .bookly-hour {
+    transition: all 0.2s ease;
+}
+
+.bookly-form .bookly-hour:hover {
+    transform: translateY(-2px);
+}
+
+.bookly-form .bookly-hour.bookly-slot-available {
+    background-color: #f8f9fa !important;
+    color: #2C3E50 !important;
+    border-radius: 4px;
+    border: 1px solid #e0e0e0;
+}
+
+.bookly-form .bookly-hour.bookly-slot-available span {
+    color: #2C3E50 !important;
+}
+
+.bookly-form .bookly-hour.bookly-slot-available:hover {
+    background-color: #e0e0e0 !important;
+}
+
+.bookly-form .bookly-hour.bookly-slot-available.bookly-hour-active {
+    background-color: #E74C3C !important;
+    border-color: #E74C3C;
+}
+
+.bookly-form .bookly-hour.bookly-slot-available.bookly-hour-active span {
+    color: #ffffff !important;
+}
+
+/* Customer details step */
+.bookly-form .bookly-details-step {
+    margin-bottom: 20px;
+}
+
+.bookly-form .bookly-details-step input[type="text"],
+.bookly-form .bookly-details-step input[type="email"],
+.bookly-form .bookly-details-step input[type="tel"],
+.bookly-form .bookly-details-step textarea {
+    border-radius: 4px;
+    padding: 10px 12px;
+    border: 1px solid #e0e0e0;
+    transition: all 0.3s ease;
+}
+
+.bookly-form .bookly-details-step input[type="text"]:focus,
+.bookly-form .bookly-details-step input[type="email"]:focus,
+.bookly-form .bookly-details-step input[type="tel"]:focus,
+.bookly-form .bookly-details-step textarea:focus {
+    border-color: #3498DB;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+    outline: none;
+}
+
+/* Buttons */
+.bookly-form .bookly-btn {
+    background-color: #E74C3C !important;
+    border-radius: 4px !important;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    padding: 12px 25px !important;
+    border: none !important;
+}
+
+.bookly-form .bookly-btn:hover {
+    background-color: #2C3E50 !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.bookly-form .bookly-back-step {
+    color: #2C3E50 !important;
+    text-decoration: none !important;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.bookly-form .bookly-back-step:hover {
+    color: #E74C3C !important;
+}
+
+/* Progress Tracker */
+.bookly-form .bookly-progress-tracker {
+    margin-bottom: 30px;
+}
+
+.bookly-form .bookly-progress-tracker > div {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.bookly-form .bookly-progress-tracker > .active {
+    color: #E74C3C !important;
+}
+
+/* Cart and Payment */
+.bookly-form .bookly-payment-nav > div {
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.bookly-form .bookly-payment-nav > div.bookly-payment-nav-active {
+    border-color: #E74C3C !important;
+}
+
+.bookly-form .bookly-box.bookly-table {
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.bookly-form .bookly-box.bookly-table .bookly-list-item.bookly-list-item-price {
+    color: #E74C3C;
+    font-weight: 700;
+}
+
+/* Done step */
+.bookly-form .bookly-box.bookly-success {
+    border-radius: 4px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-left: 5px solid #E74C3C;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .bookly-form .bookly-table > * {
+        display: block;
+        width: 100%;
+    }
+    
+    .bookly-form .bookly-progress-tracker {
+        display: none;
+    }
+    
+    .bookly-form .bookly-service-step .bookly-box {
+        padding: 10px;
+    }
+    
+    .bookly-form .bookly-hour {
+        width: calc(50% - 10px);
+        margin: 5px;
+    }
+    
+    .bookly-form .bookly-btn {
+        width: 100%;
+    }
+}
+
+/* Hide unnecessary Bookly images */
+.bookly-left.bookly-mobile-float-none {
+    display: none !important;
+}
