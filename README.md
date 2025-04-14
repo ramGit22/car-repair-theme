@@ -1,70 +1,67 @@
-[![Build Status](https://travis-ci.org/Automattic/_s.svg?branch=master)](https://travis-ci.org/Automattic/_s)
+# Car Repair Theme
 
-_s
-===
+A custom WordPress theme built with Underscores (_s) for a car repair center. The theme integrates **Bookly** (free plan) to allow customers to book services like tire change, oil change, and brake check online. Features a clean, automotive-themed design (blue/red colors, car imagery) and a streamlined booking form with unwanted UI elements (e.g., "I'm available on or after") removed via CSS.
 
-Hi. I'm a starter theme called `_s`, or `underscores`, if you like. I'm a theme meant for hacking so don't use me as a Parent Theme. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
+## Features
+- **Booking System**: Bookly-powered form for scheduling up to 5 services (e.g., Tire Change, Oil Change).
+- **Custom Design**: Blue (#1E3A8A), red (#B91C1C), white (#FFFFFF) palette with Roboto/Montserrat fonts.
+- **Pages**:
+  - Homepage: Hero with "Book Now" button, services overview.
+  - Book Now: Bookly form with tire background, simplified UI.
+  - Services: Service descriptions.
+  - Contact: Shop details, Google Maps embed.
+- **Email Notifications**: Admin and customers receive booking confirmations.
+- **Responsive**: Mobile-friendly layout for easy booking.
 
-My ultra-minimal CSS might make me look like theme tartare but that means less stuff to get in your way when you're designing your awesome theme. Here are some of the other more interesting things you'll find here:
+## Requirements
+- **WordPress**: 6.0+ (self-hosted).
+- **Bookly**: Free plan (v22.0+ recommended).
+- **LocalWP**: Optional for local development (free, v6.0+).
+- **Hosting**: For live site (e.g., Bluehost, ~$3–$5/month).
+- **Domain**: Optional (e.g., joesautorepair.com, ~$10–$15/year).
+- **Tools**:
+  - VS Code for editing.
+  - Browser (Chrome/Firefox) for testing.
+  - Canva (free) for logo.
+  - Unsplash for images (e.g., `tire-bg.jpg`).
 
-* A modern workflow with a pre-made command-line interface to turn your project into a more pleasant experience.
-* A just right amount of lean, well-commented, modern, HTML5 templates.
-* A custom header implementation in `inc/custom-header.php`. Just add the code snippet found in the comments of `inc/custom-header.php` to your `header.php` template.
-* Custom template tags in `inc/template-tags.php` that keep your templates clean and neat and prevent code duplication.
-* Some small tweaks in `inc/template-functions.php` that can improve your theming experience.
-* A script at `js/navigation.js` that makes your menu a toggled dropdown on small screens (like your phone), ready for CSS artistry. It's enqueued in `functions.php`.
-* 2 sample layouts in `sass/layouts/` made using CSS Grid for a sidebar on either side of your content. Just uncomment the layout of your choice in `sass/style.scss`.
-Note: `.no-sidebar` styles are automatically loaded.
-* Smartly organized starter CSS in `style.css` that will help you to quickly get your design off the ground.
-* Full support for `WooCommerce plugin` integration with hooks in `inc/woocommerce.php`, styling override woocommerce.css with product gallery features (zoom, swipe, lightbox) enabled.
-* Licensed under GPLv2 or later. :) Use it to make something cool.
+## Installation
+1. **Set Up WordPress**:
+   - **Local**: Install LocalWP, create site ("Car Repair Test").
+   - **Live**: Use Bluehost/Hostinger, install WordPress.
+   - Access wp-admin (e.g., http://car-repair-test.local/wp-admin).
 
-Installation
----------------
+2. **Install Theme**:
+   - Clone or copy `car-repair-theme/` to `wp-content/themes/`.
+   - In wp-admin: **Appearance** → **Themes** → Activate "Car Repair Theme".
 
-### Requirements
+3. **Install Bookly**:
+   - **Plugins** → **Add New** → Search "Bookly" → Install, activate (free).
+   - Configure:
+     - **Services**:
+       - Category: "Car Services."
+       - Add (max 5): "Tire Change" (30 mins), "Oil Change" (45 mins), "Brake Check" (20 mins), "Battery Replacement" (30 mins), "Alignment" (40 mins).
+       - Staff: One, "Joe’s Auto Repair."
+     - **Settings**:
+       - Hours: Mon–Fri, 9 AM–5 PM.
+       - Email Notifications: Enable for admin (info@joesautorepair.com), customers.
+   - Create "Book Now" page:
+     - **Pages** → **Add New** → "Book Now."
+     - Add `[bookly-form]` (Shortcode block).
+     - Set **Page Attributes** → Template: "Book Now."
 
-`_s` requires the following dependencies:
+4. **Set Up Pages**:
+   - **Homepage**: **Pages** → **Add New** → "Home," set as homepage (**Settings** → **Reading**).
+   - **Services**, **Contact**: Add pages, customize content (e.g., Contact: address, map embed).
+   - **Menu**: **Appearance** → **Menus** → Create "Primary Menu" (Home, Book Now, Services, Contact).
 
-- [Node.js](https://nodejs.org/)
-- [Composer](https://getcomposer.org/)
+5. **Assets**:
+   - Add to `car-repair-theme/images/`:
+     - `logo.png`: Create in Canva.
+     - `hero-bg.jpg`, `tire-bg.jpg`: From Unsplash (compress at TinyPNG.com).
 
-### Quick Start
+6. **Test**:
+   - Visit `/book-now`, book a test appointment.
+   - Check email notifications.
+   - Test mobile view.
 
-Clone or download this repository, change its name to something else (like, say, `megatherium-is-awesome`), and then you'll need to do a six-step find and replace on the name in all the templates.
-
-1. Search for `'_s'` (inside single quotations) to capture the text domain and replace with: `'megatherium-is-awesome'`.
-2. Search for `_s_` to capture all the functions names and replace with: `megatherium_is_awesome_`.
-3. Search for `Text Domain: _s` in `style.css` and replace with: `Text Domain: megatherium-is-awesome`.
-4. Search for <code>&nbsp;_s</code> (with a space before it) to capture DocBlocks and replace with: <code>&nbsp;Megatherium_is_Awesome</code>.
-5. Search for `_s-` to capture prefixed handles and replace with: `megatherium-is-awesome-`.
-6. Search for `_S_` (in uppercase) to capture constants and replace with: `MEGATHERIUM_IS_AWESOME_`.
-
-Then, update the stylesheet header in `style.css`, the links in `footer.php` with your own information and rename `_s.pot` from `languages` folder to use the theme's slug. Next, update or delete this readme.
-
-### Setup
-
-To start using all the tools that come with `_s`  you need to install the necessary Node.js and Composer dependencies :
-
-```sh
-$ composer install
-$ npm install
-```
-
-### Available CLI commands
-
-`_s` comes packed with CLI commands tailored for WordPress theme development :
-
-- `composer lint:wpcs` : checks all PHP files against [PHP Coding Standards](https://developer.wordpress.org/coding-standards/wordpress-coding-standards/php/).
-- `composer lint:php` : checks all PHP files for syntax errors.
-- `composer make-pot` : generates a .pot file in the `languages/` directory.
-- `npm run compile:css` : compiles SASS files to css.
-- `npm run compile:rtl` : generates an RTL stylesheet.
-- `npm run watch` : watches all SASS files and recompiles them to css when they change.
-- `npm run lint:scss` : checks all SASS files against [CSS Coding Standards](https://developer.wordpress.org/coding-standards/wordpress-coding-standards/css/).
-- `npm run lint:js` : checks all JavaScript files against [JavaScript Coding Standards](https://developer.wordpress.org/coding-standards/wordpress-coding-standards/javascript/).
-- `npm run bundle` : generates a .zip archive for distribution, excluding development and system files.
-
-Now you're ready to go! The next step is easy to say, but harder to do: make an awesome WordPress theme. :)
-
-Good luck!
