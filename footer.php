@@ -33,7 +33,7 @@
                         <li><a href="<?php echo esc_url(home_url('/about-us/')); ?>"><?php echo esc_html__('About Us', 'car-repair-theme'); ?></a></li>
                         <li><a href="<?php echo esc_url(home_url('/services/')); ?>"><?php echo esc_html__('Services', 'car-repair-theme'); ?></a></li>
                         <li><a href="<?php echo esc_url(home_url('/book-now/')); ?>"><?php echo esc_html__('Book Appointment', 'car-repair-theme'); ?></a></li>
-                        <li><a href="<?php echo esc_url(home_url('/contact/')); ?>"><?php echo esc_html__('Contact Us', 'car-repair-theme'); ?></a></li>
+                        <!-- Contact Us link removed -->
                     </ul>
                 </div>
                 
