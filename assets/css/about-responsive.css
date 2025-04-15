@@ -1,0 +1,83 @@
+/* About Section Mobile Responsiveness Fixes */
+
+/* Medium devices (tablets, 992px and down) */
+@media screen and (max-width: 991px) {
+  .about-section .about-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .about-section .about-image {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .about-section .about-content h2 {
+    text-align: center;
+  }
+}
+
+/* Medium devices (tablets, 768px and down) */
+@media screen and (max-width: 768px) {
+  .about-section {
+    padding: 60px 0;
+  }
+  
+  .about-section .about-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .about-section .about-image {
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+  }
+  
+  .about-section .about-content {
+    padding: 0 15px;
+  }
+  
+  .about-section .about-content h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  .about-section .about-features {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    max-width: 450px;
+    margin: 20px auto 0;
+  }
+}
+
+/* Small devices (phones, 575px and down) */
+@media screen and (max-width: 575px) {
+  .about-section .about-container {
+    gap: 20px;
+  }
+  
+  .about-section .about-image {
+    max-width: 100%;
+  }
+  
+  .about-section .about-content h2 {
+    font-size: 1.8rem;
+  }
+  
+  .about-section .about-content p {
+    font-size: 0.95rem;
+  }
+  
+  .about-section .feature-item {
+    align-items: flex-start;
+  }
+  
+  .about-section .feature-icon {
+    min-width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+}

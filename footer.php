@@ -116,8 +116,9 @@
 
 <?php wp_footer(); ?>
 
-<!-- Mobile enhancements script -->
+<!-- Mobile enhancements scripts -->
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/mobile-enhancements.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/assets/js/about-responsive.js"></script>
 
 <script>
 // Menu text translations to Finnish
