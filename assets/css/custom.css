@@ -96,6 +96,7 @@ a:focus {
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 20px;
+  color: rgb(194, 17, 17);
 }
 
 .section-title h2:after {
@@ -110,7 +111,7 @@ a:focus {
 .section-title p {
   max-width: 700px;
   margin: 0 auto;
-  color: var(--dark-gray);
+  color: rgb(0, 0, 0);
 }
 
 /* === HEADER === */
@@ -416,6 +417,488 @@ a:focus {
 /* === SERVICES SECTION === */
 .services-section {
   background-color: var(--light-gray);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/car-repair.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  padding: 90px 0;
+}
+
+.services-section .section-title h2 {
+  color: var(--white);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: 2.8rem;
+  position: relative;
+  display: inline-block;
+}
+
+.services-section .section-title h2:after {
+  background: var(--white);
+  width: 100px;
+  height: 3px;
+  margin: 20px auto 0;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.services-section .section-title p {
+  color: var(--white);
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 15px auto 40px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+/* 
+* Custom CSS for Car Repair Theme
+*/
+
+/* === FONTS === */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+/* === VARIABLES === */
+:root {
+  --primary-color: #2c3e50;
+  --secondary-color: #e74c3c;
+  --accent-color: #3498db;
+  --light-gray: #f5f5f5;
+  --medium-gray: #e0e0e0;
+  --dark-gray: #333333;
+  --white: #ffffff;
+  --black: #000000;
+  --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --transition: all 0.3s ease;
+  --border-radius: 4px;
+}
+
+/* === GENERAL STYLES === */
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--dark-gray);
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: var(--white);
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+a:hover,
+a:focus {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+.btn-primary {
+  background-color: var(--secondary-color);
+  color: var(--white);
+  padding: 12px 25px;
+  border: none;
+  border-radius: var(--border-radius);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-block;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-color);
+  transform: translateY(-2px);
+  box-shadow: var(--box-shadow);
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.section {
+  padding: 80px 0;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.section-title h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: rgb(194, 17, 17);
+}
+
+.section-title h2:after {
+  content: '';
+  display: block;
+  width: 70px;
+  height: 3px;
+  background: var(--secondary-color);
+  margin: 20px auto 0;
+}
+
+.section-title p {
+  max-width: 700px;
+  margin: 0 auto;
+  color: rgb(0, 0, 0);
+}
+
+/* === HEADER === */
+.site-header {
+  background-color: var(--white);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 15px 0;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+  transition: var(--transition);
+  border-bottom: 1px solid rgba(231, 76, 60, 0.1);
+}
+
+.site-header.scrolled {
+  padding: 10px 0;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+  background-color: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(10px);
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1300px;
+  padding: 0 30px;
+}
+
+.site-branding {
+  display: flex;
+  align-items: center;
+}
+
+.site-title a {
+  color: var(--primary-color);
+  font-size: 1.8rem;
+  font-weight: 800;
+  text-decoration: none;
+  transition: var(--transition);
+  position: relative;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+.site-title a:hover {
+  color: var(--secondary-color);
+}
+
+.custom-logo-link {
+  margin-right: 15px;
+  transition: var(--transition);
+}
+
+.custom-logo-link:hover {
+  transform: scale(1.05);
+}
+
+.site-description {
+  display: none;
+}
+
+/* Add some animation for scrolling header */
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.site-header.scrolled {
+  animation: slideDown 0.3s ease-out forwards;
+}
+
+/* Main Navigation */
+.main-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu-wrapper {
+  margin-left: auto;
+}
+
+.primary-menu-items {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: flex-end;
+}
+
+.main-navigation li {
+  position: relative;
+  margin-left: 25px;
+}
+
+.main-navigation a {
+  color: var(--primary-color);
+  font-weight: 600;
+  padding: 10px 15px;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+}
+
+.main-navigation a:hover {
+  color: var(--secondary-color);
+  background-color: rgba(231, 76, 60, 0.05);
+}
+
+.main-navigation .current-menu-item a {
+  color: var(--secondary-color);
+  font-weight: 700;
+}
+
+.main-navigation a:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--secondary-color);
+  transition: var(--transition);
+}
+
+.main-navigation a:hover:after,
+.current-menu-item a:after {
+  width: 70%;
+}
+
+/* Book Now menu item special styling */
+.main-navigation .menu-item a[href*='book-now'] {
+  background-color: var(--secondary-color);
+  color: var(--white);
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: 700;
+  box-shadow: 0 4px 6px rgba(231, 76, 60, 0.2);
+  transition: all 0.3s ease;
+}
+
+.main-navigation .menu-item a[href*='book-now']:hover {
+  background-color: var(--primary-color);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(44, 62, 80, 0.3);
+}
+
+.main-navigation .menu-item a[href*='book-now']:after {
+  display: none;
+}
+
+.header-contact {
+  margin-right: 30px;
+  padding-right: 30px;
+  border-right: 1px solid var(--medium-gray);
+}
+
+.contact-phone {
+  display: flex;
+  align-items: center;
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 15px;
+  transition: var(--transition);
+}
+
+.contact-phone i {
+  color: var(--secondary-color);
+  margin-right: 8px;
+  font-size: 18px;
+}
+
+.contact-phone:hover {
+  color: var(--secondary-color);
+}
+
+.menu-toggle {
+  display: none;
+  background: transparent;
+  border: none;
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0;
+  outline: none;
+}
+
+/* === HERO SECTION === */
+.hero-section {
+  height: 80vh;
+  min-height: 600px;
+  background-color: var(--primary-color);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('../images/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--white);
+  padding-top: 80px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(
+    circle at center,
+    rgba(52, 152, 219, 0.2) 0%,
+    rgba(44, 62, 80, 0) 70%
+  );
+  z-index: 1;
+}
+
+.hero-section:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 150px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-content {
+  max-width: 800px;
+  padding: 0 15px;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--white);
+  text-transform: uppercase;
+}
+
+.hero-content p {
+  font-size: 1.25rem;
+  margin-bottom: 30px;
+  opacity: 0.9;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.cta-button {
+  background-color: var(--secondary-color);
+  color: var(--white);
+  padding: 15px 30px;
+  border-radius: var(--border-radius);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: var(--transition);
+}
+
+.cta-button:hover {
+  background-color: var(--white);
+  color: var(--secondary-color);
+  transform: translateY(-3px);
+}
+
+.cta-button.outline {
+  background-color: transparent;
+  border: 2px solid var(--white);
+}
+
+.cta-button.outline:hover {
+  background-color: var(--white);
+  color: var(--primary-color);
+}
+
+/* === SERVICES SECTION === */
+.services-section {
+  background-color: var(--light-gray);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/car-repair.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  padding: 90px 0;
+}
+
+.services-section .section-title h2 {
+  color: var(--white);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: 2.8rem;
+  position: relative;
+  display: inline-block;
+}
+
+.services-section .section-title h2:after {
+  background: var(--white);
+  width: 100px;
+  height: 3px;
+  margin: 20px auto 0;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.services-section .section-title p {
+  color: var(--white);
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 15px auto 40px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 .services-container {
@@ -1581,3 +2064,4 @@ textarea.form-control {
     grid-template-columns: 1fr;
   }
 }
+

@@ -29,9 +29,9 @@
                 <div class="footer-widget">
                     <h3><?php echo esc_html__('Pikalinkit', 'car-repair-theme'); ?></h3>
                     <ul class="footer-links">
-                        <li><a href="<?php echo esc_url(home_url('/')); ?>"><?php echo esc_html__('Etusivu', 'car-repair-theme'); ?></a></li>
-                        <li><a href="<?php echo esc_url(home_url('/about-us/')); ?>"><?php echo esc_html__('Tietoa Meistä', 'car-repair-theme'); ?></a></li>
-                        <li><a href="<?php echo esc_url(home_url('/services/')); ?>"><?php echo esc_html__('Palvelut', 'car-repair-theme'); ?></a></li>
+                        <li><a href="<?php echo esc_url(home_url('/home')); ?>"><?php echo esc_html__('Etusivu', 'car-repair-theme'); ?></a></li>
+                        <!-- <li><a href="<?php echo esc_url(home_url('/about-us/')); ?>"><?php echo esc_html__('Tietoa Meistä', 'car-repair-theme'); ?></a></li>
+                        <li><a href="<?php echo esc_url(home_url('/services/')); ?>"><?php echo esc_html__('Palvelut', 'car-repair-theme'); ?></a></li> -->
                         <li><a href="<?php echo esc_url(home_url('/book-now/')); ?>"><?php echo esc_html__('Varaa Aika', 'car-repair-theme'); ?></a></li>
                         <!-- Contact Us link removed -->
                     </ul>
