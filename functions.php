@@ -296,7 +296,7 @@ function car_repair_breadcrumbs() {
     $separator          = '<i class="fas fa-chevron-right"></i>';
     $breadcrumbs_id      = 'breadcrumbs';
     $breadcrumbs_class   = 'breadcrumbs';
-    $home_title         = esc_html__('Home', 'car-repair-theme');
+    $home_title         = 'Etusivu';
     
     // Get the query & post information
     global $post, $wp_query;

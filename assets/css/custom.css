@@ -2065,3 +2065,15 @@ textarea.form-control {
   }
 }
 
+
+/* Site title with icon */
+.site-title a {
+  display: flex;
+  align-items: center;
+}
+
+.site-icon {
+  height: 30px;
+  width: auto;
+  margin-right: 10px;
+}
