@@ -33,13 +33,21 @@
 	}
 
 	// Toggle the .toggled class and the aria-expanded value each time the button is clicked.
-	button.addEventListener( 'click', function() {
+	button.addEventListener( 'click', function(e) {
+		e.preventDefault();
 		siteNavigation.classList.toggle( 'toggled' );
 
 		if ( button.getAttribute( 'aria-expanded' ) === 'true' ) {
 			button.setAttribute( 'aria-expanded', 'false' );
 		} else {
 			button.setAttribute( 'aria-expanded', 'true' );
+		}
+		
+		// If menu is now open, add event listener to close when clicking outside
+		if (siteNavigation.classList.contains('toggled')) {
+			document.body.style.overflow = 'hidden';
+		} else {
+			document.body.style.overflow = '';
 		}
 	} );
 
@@ -50,8 +58,18 @@
 		if ( ! isClickInside ) {
 			siteNavigation.classList.remove( 'toggled' );
 			button.setAttribute( 'aria-expanded', 'false' );
+			document.body.style.overflow = '';
 		}
 	} );
+	
+	// Close mobile menu when a link is clicked
+	menu.addEventListener('click', function(event) {
+		if (event.target.tagName === 'A') {
+			siteNavigation.classList.remove('toggled');
+			button.setAttribute('aria-expanded', 'false');
+			document.body.style.overflow = '';
+		}
+	});
 
 	// Get all the link elements within the menu.
 	const links = menu.getElementsByTagName( 'a' );

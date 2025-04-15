@@ -14,13 +14,15 @@
 <html <?php language_attributes(); ?>>
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
     <!-- Favicon -->
     <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/assets/images/favicon.svg" type="image/svg+xml">
     <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/assets/images/favicon.png" type="image/png">
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <!-- Responsive Styles -->
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/responsive.css">
 	<?php wp_head(); ?>
 </head>
 
@@ -51,14 +53,14 @@
 			</div><!-- .site-branding -->
 
 			<nav id="site-navigation" class="main-navigation">
-				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
-                    <i class="fas fa-bars"></i>
-                </button>
-                <div class="header-contact">
+				<div class="header-contact">
                     <a href="tel:+358123456789" class="contact-phone">
-                        <i class="fas fa-phone"></i> +358 12 345 6789
+                        <i class="fas fa-phone"></i> <span>+358 12 345 6789</span>
                     </a>
                 </div>
+                <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                    <i class="fas fa-bars"></i>
+                </button>
                 <div class="menu-wrapper">
                     <?php
                     wp_nav_menu(
@@ -66,6 +68,7 @@
                             'theme_location' => 'menu-1',
                             'menu_id'        => 'primary-menu',
                             'menu_class'     => 'primary-menu-items',
+                            'container'      => false,
                         )
                     );
                     ?>
