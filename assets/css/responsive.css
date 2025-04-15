@@ -226,6 +226,13 @@ object {
     font-size: 1.2rem;
   }
   
+  /* Menu Toggle - fixing mobile display issue */
+  .menu-toggle {
+    display: block !important;
+    margin-left: 10px;
+    font-size: 22px;
+  }
+  
   .contact-phone {
     font-size: 14px;
   }
