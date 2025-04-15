@@ -159,7 +159,7 @@ get_header(); ?>
         <div class="container">
             <div class="section-title">
                 <h2><?php echo esc_html__('Miksi Valita Meidät', 'car-repair-theme'); ?></h2>
-                <p><?php echo esc_html__('Tutustu autokorjauspalveluidemme etuihin', 'car-repair-theme'); ?></p>
+                <!-- <p><?php echo esc_html__('Tutustu autokorjauspalveluidemme etuihin', 'car-repair-theme'); ?></p> -->
             </div>
             
             <div class="reasons-container">

@@ -57,7 +57,7 @@
                                 <i class="fas fa-map-marker-alt"></i>
                             </div>
                             <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-                                <span itemprop="streetAddress">Korjaajankatu 123</span>, 
+                                <span itemprop="streetAddress">YLIOPISTONKATU 6</span>, 
                                 <span itemprop="postalCode">20100</span> 
                                 <span itemprop="addressLocality">Turku</span>, 
                                 <span itemprop="addressCountry">Finland</span>
@@ -68,7 +68,7 @@
                                 <i class="fas fa-phone-alt"></i>
                             </div>
                             <div>
-                                <a href="tel:+358123456789" itemprop="telephone">+358 12 345 6789</a>
+                                <a href="tel:+358123456789" itemprop="telephone">+358 400 542 532</a>
                             </div>
                         </div>
                         <div class="footer-contact-item">
@@ -76,7 +76,7 @@
                                 <i class="fas fa-envelope"></i>
                             </div>
                             <div>
-                                <a href="mailto:info@carrepairturku.fi" itemprop="email">info@carrepairturku.fi</a>
+                                <a href="mailto:info@carrepairturku.fi" itemprop="email">info@brahenautohuolto.fi</a>
                             </div>
                         </div>
                         <div class="footer-contact-item">

@@ -36,11 +36,11 @@
 				the_custom_logo();
 				if ( is_front_page() && is_home() ) :
 					?>
-					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/car-fav.png" alt="BRAHEN AD-AUTOHUOLTO Icon" class="site-icon"> BRAHEN AD-AUTOHUOLTO</a></h1>
+					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/home' ) ); ?>" rel="home"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/car-fav.png" alt="BRAHEN AD-AUTOHUOLTO Icon" class="site-icon"> BRAHEN AD-AUTOHUOLTO</a></h1>
 					<?php
 				else :
 					?>
-					<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/car-fav.png" alt="BRAHEN AD-AUTOHUOLTO Icon" class="site-icon"> BRAHEN AD-AUTOHUOLTO</a></p>
+					<p class="site-title"><a href="<?php echo esc_url( home_url( '/home' ) ); ?>" rel="home"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/car-fav.png" alt="BRAHEN AD-AUTOHUOLTO Icon" class="site-icon"> BRAHEN AD-AUTOHUOLTO</a></p>
 					<?php
 				endif;
 				$car_repair_theme_description = get_bloginfo( 'description', 'display' );
