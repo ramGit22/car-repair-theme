@@ -1,0 +1,38 @@
+/* Mobile Header Adjustments */
+
+@media screen and (max-width: 768px) {
+  /* Hide header-contact on small screens */
+  .header-contact {
+    display: none;
+  }
+  
+  /* Adjust navigation layout for mobile */
+  .main-navigation {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  /* Ensure menu-toggle is on the right side */
+  .menu-toggle {
+    display: block;
+    order: 2;
+    margin-left: auto;
+    margin-right: 0;
+  }
+}
+
+/* Extra small devices (phones, 575px and down) */
+@media screen and (max-width: 575px) {
+  /* Ensure the menu toggle is visible and properly positioned */
+  .menu-toggle {
+    display: block !important;
+    margin-left: auto;
+    margin-right: 0;
+    font-size: 22px;
+  }
+  
+  /* Additional adjustments for very small screens */
+  .site-branding {
+    max-width: 80%;
+  }
+}

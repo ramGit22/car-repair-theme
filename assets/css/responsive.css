@@ -81,10 +81,12 @@ object {
     margin-right: 8px;
   }
   
+  /* UPDATED: Position menu toggle to the right and hide contact info */
   .menu-toggle {
     display: block;
-    order: 3;
-    margin-left: 15px;
+    order: 2;
+    margin-left: auto;
+    margin-right: 0;
     font-size: 24px;
     background-color: transparent;
     color: var(--primary-color);
@@ -96,11 +98,9 @@ object {
     color: var(--secondary-color);
   }
   
+  /* UPDATED: Hide header contact on mobile */
   .header-contact {
-    order: 2;
-    margin-right: 0;
-    padding-right: 0;
-    border-right: none;
+    display: none;
   }
   
   .menu-wrapper {
@@ -111,6 +111,7 @@ object {
   
   .main-navigation {
     flex-wrap: wrap;
+    justify-content: flex-end;
   }
   
   .primary-menu-items {
@@ -226,20 +227,15 @@ object {
     font-size: 1.2rem;
   }
   
-  /* Menu Toggle - fixing mobile display issue */
+  /* UPDATED: Menu Toggle - ensure it stays on the right */
   .menu-toggle {
     display: block !important;
-    margin-left: 10px;
+    margin-left: auto !important;
+    margin-right: 0 !important;
     font-size: 22px;
   }
   
-  .contact-phone {
-    font-size: 14px;
-  }
-  
-  .contact-phone span {
-    display: none; /* Hide phone number text on very small screens */
-  }
+  /* UPDATED: Contact is already hidden from 768px breakpoint */
   
   /* Hero Section */
   .hero-section {
