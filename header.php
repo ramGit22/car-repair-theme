@@ -78,7 +78,7 @@
 	</header><!-- #masthead -->
     
     <?php if (is_front_page() && !is_home()) : ?>
-    <section class="hero-section">
+    <!-- <section class="hero-section">
         <div class="hero-content">
             <h1><?php echo esc_html__('Ammattimainen Autokorjaamopalvelu Turussa', 'car-repair-theme'); ?></h1>
             <p><?php echo esc_html__('Tarjoamme laadukkaita autonkorjaus- ja huoltopalveluita, jotta ajoneuvosi toimii sujuvasti', 'car-repair-theme'); ?></p>
@@ -87,7 +87,7 @@
                 <a href="#services" class="cta-button outline"><?php echo esc_html__('Palvelumme', 'car-repair-theme'); ?></a>
             </div>
         </div>
-    </section>
+    </section> -->
     <?php endif; ?>
     
     <div id="content" class="site-content">
