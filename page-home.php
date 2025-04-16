@@ -102,7 +102,7 @@ get_header(); ?>
         <div class="container">
             <div class="about-container">
                 <div class="about-image animate-on-scroll">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/about-image.svg" alt="<?php echo esc_attr__('About Our Car Repair Shop', 'car-repair-theme'); ?>">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/about-image.jpg" alt="<?php echo esc_attr__('About Our Car Repair Shop', 'car-repair-theme'); ?>">
                 </div>
                 
                 <div class="about-content animate-on-scroll">
@@ -148,7 +148,7 @@ get_header(); ?>
                         </div>
                     </div>
                     
-                    <a href="<?php echo esc_url(home_url('/about-us/')); ?>" class="btn-primary mt-4"><?php echo esc_html__('Lue Lisää', 'car-repair-theme'); ?></a>
+                    <!-- <a href="<?php echo esc_url(home_url('/about-us/')); ?>" class="btn-primary mt-4"><?php echo esc_html__('Lue Lisää', 'car-repair-theme'); ?></a> -->
                 </div>
             </div>
         </div>
