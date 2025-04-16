@@ -23,6 +23,40 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <!-- Responsive Styles -->
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/responsive.css">
+    <style>
+        /* Header logo and text alignment fix */
+        .site-icon {
+            height: 28px;
+            width: auto;
+            margin-right: 12px;
+            vertical-align: middle;
+        }
+        
+        .site-title a {
+            display: flex;
+            align-items: center;
+            font-size: 1.2rem;
+            line-height: 1.2;
+        }
+        
+        @media screen and (min-width: 768px) {
+            .site-icon {
+                height: 30px;
+            }
+            .site-title a {
+                font-size: 1.4rem;
+            }
+        }
+        
+        @media screen and (min-width: 992px) {
+            .site-icon {
+                height: 32px;
+            }
+            .site-title a {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
 	<?php wp_head(); ?>
 </head>
 
